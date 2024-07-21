@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebComponents</title>
+  <link rel="stylesheet" href="./src/index.css" />
+  <script type="module" src="/src/my-accordian.ts"></script>
+</head>
+
+<body>
+  <my-accordian title="Accord 1" isOpened>
+    Content -1
+
+  </my-accordian>
+  <my-accordian title="Accord 2s" isOpened>
+    Content -2
+
+  </my-accordian>
+
+  <script>
+    const ele = document.querySelector('my-accordian');
+    ele.addEventListener("icon-click", () => {
+      console.log("CLICKED from HTML")
+    })
+  </script>
+</body>
+
+</html>
